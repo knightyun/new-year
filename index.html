@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="subresource" href="assets/mp3/chun-jie.mp3" />
+    <link rel="preload" href="assets/img/door/left-door.png" />
+    <link rel="preload" href="assets/img/door/right-door.png" />
+    <link rel="preload" href="assets/img/fu/fu-reverse.png" />
+    <link rel="preload" href="assets/img/words/words-top.png" />
+    <link rel="preload" href="assets/img/words/words-left.png" />
+    <link rel="preload" href="assets/img/words/words-right.png" />
+    <title>猪年大吉</title>
+</head>
+<body>
+    <audio id="mp3" src="./assets/mp3/chun-jie.mp3" autoplay="autoplay" loop="loop"></audio>
+    <div id="container">
+        <div id="top">
+            <img src="./assets/img/words/words-top.png" class="words-top words" alt="" />
+        </div>
+
+        <div id="main">
+            <img src="./assets/img/words/words-left.png" class="words-left words-both words" alt="" />
+            <div class="doors">
+                <img src="./assets/img/door/left-door.png" class="left-door" alt="" />
+                <img src="./assets/img/door/right-door.png" class="right-door" alt="" />
+            </div>
+            <img src="./assets/img/words/words-right.png" class="words-right words-both words" alt="" />
+        </div>
+        <div id="footer">
+            <img src="./assets/img/pig/pig-0.png" alt="" class="pig-0 pig"/>
+            <img src="./assets/img/pig/pig-1.png" alt="" class="pig-1 pig"/>
+            <img src="./assets/img/pig/pig-2.png" alt="" class="pig-2 pig"/>
+            <img src="./assets/img/pig/pig-3.png" alt="" class="pig-3 pig"/>
+            <img src="./assets/img/pig/pig-4.png" alt="" class="pig-4 pig"/>
+            <img src="./assets/img/pig/pig-5.png" alt="" class="pig-5 pig"/>
+        </div>
+        <div id="fu-front">
+            <img src="./assets/img/fu/fu-reverse.png" class="fu-reverse" alt="">
+            <div class="click" onclick="openDoor()">开门大吉</div>
+        </div>
+        <div id="open">
+            <img src="./assets/img/fu/fu-y.png" class="open-fu open" alt="" />
+            <div class="open-2019">
+                <img src="./assets/img/open/2019-1-y.png" class="open-2019-1 open" alt="" />
+                <img src="./assets/img/open/2019-2-y.png" class="open-2019-2 open" alt="" />
+            </div>
+            <ul class="bullet-screen"></ul>
+        </div>
+        <div id="input">
+            <input type="button" value="清空" class="input-clear" onclick="inputClear()" />
+            <input class="input-text" type="text" placeholder="输入新年寄语"/>
+            <input type="button" value="发送" class="input-btn" onclick="inputClick()"/>
+        </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

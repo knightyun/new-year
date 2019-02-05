@@ -1,0 +1,232 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: maroon;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    max-width: 30rem;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+#top {
+    width: 100%;
+    margin: .5rem;
+}
+
+.words-top {
+    width: 3px;
+}
+
+#main {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.words-both {
+    display: inline-block;
+    width: 13%;
+    height: 0;
+}
+.words {
+    transition: 2s linear;
+    -webkit-transition: 2s linear;
+}
+.doors {
+    display: inline-block;
+    width: 60%;
+    perspective: 500;
+    -webkit-perspective: 500;
+}
+
+.left-door {
+    width: 50%;
+    float: left;
+    transition: 2s linear;
+    -webkit-transition: 2s linear;
+    transform-origin: left bottom;
+    -webkit-transform-origin: left bottom;
+}
+
+.right-door {
+    width: 50%;
+    float: right;
+    transition: 2s linear;
+    -webkit-transition: 2s linear;
+    transform-origin: right bottom;
+    -webkit-transform-origin: right bottom;
+}
+
+#fu-front {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    width: 100%;
+    transition: 2s linear;
+    -webkit-transition: 2s linear;
+}
+
+.fu-reverse {
+    width: 30%;
+    margin-bottom: 1rem;
+    animation: fu 3s linear infinite;
+    -webkit-animation: fu 3s linear infinite;
+}
+.click {
+    background: gold;
+    width: 40%;
+    margin: auto;
+    padding: 1%;
+    font-size: 180%;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: .5rem;
+    border: .3rem solid gold;
+    border-style: ridge;
+    cursor: pointer;
+    transition: 2s linear;
+    -webkit-transition: 2s linear;
+    animation: click 2s linear infinite alternate;
+    -webkit-animation: click 2s linear infinite alternate;
+}
+#footer {
+    width: 30%;
+    margin: auto;
+    position: relative;
+    transition: 2s linear;
+}
+
+.pig {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.pig-0 {
+    animation-name: pig-0;
+}
+.pig-1 {
+    animation-name: pig-1;
+}
+.pig-2 {
+    animation-name: pig-2;
+}
+.pig-3 {
+    animation-name: pig-3;
+}
+.pig-4 {
+    animation-name: pig-4;
+}
+.pig-5 {
+    animation-name: pig-5;
+}
+
+#open {
+    display: none;
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    top: 3rem;
+    text-align: center;
+    background: maroon;
+    opacity: .7;
+    border: 3px solid yellow;
+    border-style: ridge;
+    border-radius: .5rem;
+    animation: open-scale 3s linear forwards;
+    -webkit-animation: open-scale 3s linear forwards;
+}
+.open {
+    display: block;
+    margin: auto;
+}
+.open-fu {
+    width: 60%;
+}
+.open-2019 {
+    position: relative;
+    background: red;
+    perspective: 500;
+    -webkit-perspective: 500;
+}
+.open-2019 * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform-origin: center bottom;
+    -webkit-transform-origin: center bottom;
+}
+.open-2019-1 {
+    animation: open-2019-1 4s linear infinite;
+}
+.open-2019-2 {
+    animation: open-2019-2 4s linear infinite;
+}
+
+.bullet-screen {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.bullet-screen li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: yellow;
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    animation: bullet-screen 4s linear forwards;
+    -webkit-animation: bullet-screen 4s linear forwards;
+}
+
+#input {
+    display: none;
+    position: fixed;
+    width: 100%;
+    max-width: 30rem;
+    bottom: 1rem;
+    animation: input 3s linear;
+    -webkit-animation: input 3s linear;
+}
+#input * {
+    height: 2rem;
+    border-radius: .3rem;
+}
+.input-clear {
+    width: 15%;
+}
+.input-text {
+    width: 60%;
+}
+.input-btn {
+    width: 15%;
+}
